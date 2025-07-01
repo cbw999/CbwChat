@@ -137,5 +137,11 @@ npm install
 
 ---
 
-이 순서대로 진행하면 확장성과 유지보수성이 높아집니다!  
-각 단계별 예시 코드나 구조가 필요하면 언제든 말씀해 주세요.
+### 몽고DB 스키마 생성
+1. actions
+2. agents
+3. assistants
+4. balances
+5. banners
+6. categories
+7. conversationTags
