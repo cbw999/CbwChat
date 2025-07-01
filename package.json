@@ -22,7 +22,7 @@
     "lint": "eslint \"{,!(node_modules|venv)/**/}*.{js,jsx,ts,tsx}\"",
     "format": "npx prettier --write \"{,!(node_modules|venv)/**/}*.{js,jsx,ts,tsx}\""
   },
-   "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/cbw999/CbwChat.git"
   },
@@ -83,7 +83,7 @@
       }
     }
   },
-   "nodemonConfig": {
+  "nodemonConfig": {
     "ignore": [
       "api/data/",
       "data/",
@@ -93,4 +93,3 @@
     ]
   }
 }
-
