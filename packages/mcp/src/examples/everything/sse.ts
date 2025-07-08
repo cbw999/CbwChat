@@ -4,6 +4,7 @@ import { createServer } from './everything.js';
 const app = express();
 const { server, cleanup } = createServer();
 let transport: SSEServerTransport;
+
 app.get('/sse', async (req, res) => {
   console.log('Received connection');
   transport = new SSEServerTransport('/message', res);
