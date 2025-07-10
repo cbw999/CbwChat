@@ -5,6 +5,12 @@ const { parseTextParts, ContentTypes } = require('cbwchat-data-provider');
 const { cleanUpPrimaryKeyValue } = require('~/lib/utils/misc');
 const logger = require('~/config/meiliLogger');
 
+/**
+ * 이 코드는 MongoDB와 MeiliSearch를 동기화하는 Mongoose 플러그인입니다. Mongoose 모델에 플러그인으로 적용하면,
+ * 해당 모델의 데이터가 MeiliSearch 인덱스와 자동으로 동기화됩니다.
+ * MongoDB에 저장된 데이터를 MeiliSearch 인덱스와 자동 동기화하기 위함
+ * 검색 성능 향상을 위해 MeiliSearch를 사용하는 앱에서 데이터 일관성 유지
+ */
 // Environment flags
 /**
  * Flag to indicate if search is enabled based on environment variables.
